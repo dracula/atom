@@ -292,3 +292,14 @@
 [data-zen="true"] atom-pane-container atom-pane .item-views {
   background: @very-dark-gray !important;
 }
+
+atom-text-editor::shadow .highlight.find-result .region {
+  background: lighten(#44475a, 3%);
+  z-index: -1000;
+}
+
+atom-text-editor::shadow .highlight.current-result .region,
+atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .region {
+  background: lighten(#44475a, 20%); // to distinguish from the other results
+  z-index: -1000;
+}
