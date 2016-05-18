@@ -6,7 +6,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/x](https://draculatheme.com/atom).
+All instructions can be found at [draculatheme.com/atom](https://draculatheme.com/atom).
 
 ## License
 
