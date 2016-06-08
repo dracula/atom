@@ -303,3 +303,8 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   background: lighten(@dark-gray, 20%); // to distinguish from the other results
   z-index: -1000;
 }
+
+atom-text-editor::shadow .bracket-matcher .region {
+  border-bottom: 1px dotted @green;
+  z-index: 100;
+}
