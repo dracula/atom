@@ -6,7 +6,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/atom](https://draculatheme.com/atom).
+``` apm install dracula-theme ``` 
 
 ## Related
 * [UI theme](https://github.com/yl0g0ly/dracula-ui)
