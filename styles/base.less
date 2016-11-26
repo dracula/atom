@@ -1,52 +1,43 @@
 @import "syntax-variables";
 
-.atom-text-editor, .atom-text-editor .gutter,
-:host, :host .gutter {
+atom-text-editor, atom-text-editor .gutter {
   background-color: @very-dark-gray;
   color: @very-light-gray;
 }
 
-.atom-text-editor.is-focused .cursor,
-:host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor {
   border-color: @lace;
 }
 
-.atom-text-editor.is-focused .selection .region,
-:host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region {
   background-color: @dark-gray;
 }
 
-.atom-text-editor.is-focused .line-number.cursor-line-no-selection, .atom-text-editor.is-focused .line.cursor-line,
-:host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
   background-color: @dark-gray;
 }
 
-.atom-text-editor .invisible-character,
-:host .invisible-character {
+atom-text-editor .invisible-character {
   color: @gray;
 }
 
-.atom-text-editor .indent-guide,
-:host .indent-guide {
+atom-text-editor .indent-guide {
   box-shadow: inset 1px 0 darken(@gray, 13%);
 }
 
-.atom-text-editor .gutter .line-number.git-line-modified,
-.atom-text-editor .gutter .line-number.git-line-removed,
-.atom-text-editor .gutter .line-number.git-line-added,
-:host .gutter .line-number.git-line-modified,
-:host .gutter .line-number.git-line-removed,
-:host .gutter .line-number.git-line-added {
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor .gutter .line-number.git-line-removed,
+atom-text-editor .gutter .line-number.git-line-added {
   border-left-width: 5px;
   padding-left: calc(0.5em - 5px);
 }
 
-.markdown-preview > .atom-text-editor {
+.markdown-preview > atom-text-editor {
   background: @very-dark-gray;
   border: 1px solid @very-dark-gray;
 }
 
-.markdown-preview .atom-text-editor {
+.markdown-preview atom-text-editor {
   color: @black;
 }
 
@@ -54,238 +45,238 @@
   background-color: @blue;
 }
 
-.comment {
+.syntax--comment {
   color: @blue;
 }
 
-.string {
+.syntax--string {
   color: @yellow;
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: @purple;
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   color: @purple;
 }
 
-.constant.character, .constant.other {
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
   color: @purple;
 }
 
-.variable {
+.syntax--variable {
   color: @cyan;
 }
 
-.variable.other.readwrite.instance {
+.syntax--variable.syntax--other.syntax--readwrite.syntax--instance {
   color: @orange;
 }
 
-.constant.character.escaped, .constant.character.escape, .string .source, .string .source.ruby {
+.syntax--constant.syntax--character.syntax--escaped, .syntax--constant.syntax--character.syntax--escape, .syntax--string .syntax--source, .syntax--string .syntax--source.syntax--ruby {
   color: @pink;
 }
 
-.keyword {
+.syntax--keyword {
   color: @pink;
 }
 
-.storage {
+.syntax--storage {
   color: @pink;
 }
 
-.storage.type {
+.syntax--storage.syntax--type {
   font-style: italic;
   color: @cyan;
 }
 
-.entity.name.class {
+.syntax--entity.syntax--name.syntax--class {
   text-decoration: underline;
   color: @green;
 }
 
-.entity.other.inherited-class {
+.syntax--entity.syntax--other.syntax--inherited-class {
   font-style: italic;
   text-decoration: underline;
   color: @green;
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: @green;
 }
 
-.variable.parameter {
+.syntax--variable.syntax--parameter {
   font-style: italic;
   color: @orange;
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
   color: @pink;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: @green;
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: @cyan;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: darken(@cyan, 6%);
 }
 
-.support.type, .support.class {
+.syntax--support.syntax--type, .syntax--support.syntax--class {
   font-style: italic;
   color: @soft-cyan;
 }
 
-.support.other.variable {
+.syntax--support.syntax--other.syntax--variable {
 }
 
-.invalid {
+.syntax--invalid {
   color: @lace;
   background-color: @pink;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
   color: @lace;
   background-color: @purple;
 }
 
-.meta.structure.dictionary.json .string.quoted.double.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: @sandstone;
 }
 
-.meta.diff, .meta.diff.header {
+.syntax--meta.syntax--diff, .syntax--meta.syntax--diff.syntax--header {
   color: @blue;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: @pink;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   color: @green;
 }
 
-.markup.changed {
+.syntax--markup.syntax--changed {
   color: @dark-yellow;
 }
 
-.constant.numeric.line-number.find-in-files:not(.match) {
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match) {
   color: @purple;
 }
 
-.entity.name.filename {
+.syntax--entity.syntax--name.syntax--filename {
   color: @dark-yellow;
 }
 
-.message.error {
+.syntax--message.syntax--error {
   color: #F83333;
 }
 
-.punctuation.definition.string.begin.json:not(.meta.structure.dictionary.value.json), .punctuation.definition.string.end.json:not(.meta.structure.dictionary.value.json) {
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json), .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json) {
   color: darken(@white, 7%);
 }
 
-.meta.structure.dictionary.json .string.quoted.double.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: @cyan;
 }
 
-.meta.structure.dictionary.value.json .string.quoted.double.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: @yellow;
 }
 
-.meta .meta .meta .meta .meta .meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @green;
 }
 
-.meta .meta .meta .meta .meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @orange;
 }
 
-.meta .meta .meta .meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @pink;
 }
 
-.meta .meta .meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @purple;
 }
 
-.meta .meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @green;
 }
 
-.meta .meta.structure.dictionary.value .string {
+.syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
   color: @orange;
 }
 
-.heading.gfm {
+.syntax--heading.syntax--gfm {
   color: @purple;
 }
 
-.entity.gfm {
+.syntax--entity.syntax--gfm {
   color: @pink;
 }
 
-.markup.underline.link.gfm {
+.syntax--markup.syntax--underline.syntax--link.syntax--gfm {
   color: @cyan;
 }
 
-.variable.unordered.list.gfm {
+.syntax--variable.syntax--unordered.syntax--list.syntax--gfm {
   color: @cyan;
 }
 
-.variable.ordered.list.gfm {
+.syntax--variable.syntax--ordered.syntax--list.syntax--gfm {
   color: @cyan;
 }
 
-.variable.other.normal.shell {
+.syntax--variable.syntax--other.syntax--normal.syntax--shell {
   color:@purple;
 }
 
-.markup.bold.gfm {
+.syntax--markup.syntax--bold.syntax--gfm {
   color: @orange;
 }
 
-.markup.italic.gfm {
+.syntax--markup.syntax--italic.syntax--gfm {
   color: @yellow;
 }
 
-.markup.strike.gfm {
+.syntax--markup.syntax--strike.syntax--gfm {
   color: @red;
 }
 
-.markup.raw.gfm {
+.syntax--markup.syntax--raw.syntax--gfm {
   color: @green;
 }
 
-.code.gfm {
+.syntax--code.syntax--gfm {
   color: @green;
 }
 
-.code.gfm .link {
+.syntax--code.syntax--gfm .syntax--link {
     color: @cyan;
 }
 
-.critic.gfm.addition {
+.syntax--critic.syntax--gfm.syntax--addition {
   color: @green;
 }
 
-.critic.gfm.deletion {
+.syntax--critic.syntax--gfm.syntax--deletion {
   color: @red;
 }
 
-.critic.gfm.substitution {
+.syntax--critic.syntax--gfm.syntax--substitution {
   color:  @orange;
 }
 
-.critic.gfm.highlight {
+.syntax--critic.syntax--gfm.syntax--highlight {
   color: @pink;
 }
 
-.critic.gfm.comment {
+.syntax--critic.syntax--gfm.syntax--comment {
   color: @blue;
 }
 
@@ -293,18 +284,18 @@
   background: @very-dark-gray !important;
 }
 
-atom-text-editor::shadow .highlight.find-result .region {
+atom-text-editor .highlight.find-result .region {
   background: lighten(@dark-gray, 3%);
   z-index: -1000;
 }
 
-atom-text-editor::shadow .highlight.current-result .region,
-atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .region {
+atom-text-editor .highlight.current-result .region,
+atom-text-editor .highlight.current-result ~ .highlight.selection .region {
   background: lighten(@dark-gray, 20%); // to distinguish from the other results
   z-index: -1000;
 }
 
-atom-text-editor::shadow .bracket-matcher .region {
+atom-text-editor .bracket-matcher .region {
   border-bottom: 1px dotted @green;
   z-index: 100;
 }

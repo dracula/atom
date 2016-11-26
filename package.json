@@ -6,6 +6,6 @@
   "repository": "https://github.com/dracula/atom",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.13.0 <2.0.0"
   }
 }
