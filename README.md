@@ -9,7 +9,7 @@
 All instructions can be found at [draculatheme.com/atom](https://draculatheme.com/atom).
 
 ## Related
-* [UI theme](https://github.com/yl0g0ly/dracula-ui)
+* [UI theme](https://github.com/dracula/atom-ui)
 
 ## Team
 
