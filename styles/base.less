@@ -299,3 +299,9 @@ atom-text-editor .bracket-matcher .region {
   border-bottom: 1px dotted @green;
   z-index: 100;
 }
+
+// Highlights #{} in ruby string interpolation and <?php ?> syntax tag
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--begin,
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--end {
+  color: @orange;
+}
