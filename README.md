@@ -8,6 +8,10 @@
 
 All instructions can be found at [draculatheme.com/atom](https://draculatheme.com/atom).
 
+## Issues
+
+If you are running into an issue where Atom is constantly asking you to update the package, it may have to do with the rename from `dracula-theme` to `dracula-syntax`. Uninstalling `dracula-theme` and `dracula-syntax` and reinstalling `dracula-syntax` should fix this problem.
+
 ## Related
 
 * [UI theme](https://github.com/dracula/atom-ui)
