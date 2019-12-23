@@ -2,7 +2,7 @@
 
 > A dark theme for [Atom](https://atom.io).
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/atom.png)
+![Screenshot](./screenshot.png)
 
 ## Install
 
