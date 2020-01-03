@@ -15,12 +15,12 @@
 
 Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `~/.atom/packages` directory.
 
-    git clone https://github.com/dracula/atom.git ~/.atom/packages/dracula-theme
+    git clone https://github.com/dracula/atom.git ~/.atom/packages/dracula-syntax
 
 #### Install manually
 
 1. Download using the [GitHub .zip download](https://github.com/dracula/atom/archive/master.zip) option and unzip them
-2. Move the `dracula-theme` folder to `~/.atom/packages`
+2. Move the `dracula-syntax` folder to `~/.atom/packages`
 
 #### Activating theme
 
