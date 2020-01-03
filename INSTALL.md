@@ -5,7 +5,7 @@
 1. Go to `Atom -> Preferences...`
 2. Then select the `Install` tab
 3. Click the `Themes` button to the right of the search box
-4. Enter `dracula-theme` in the search box
+4. Enter `dracula-syntax` in the search box
 
 #### Install using Git
 
