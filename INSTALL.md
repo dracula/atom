@@ -7,6 +7,10 @@
 3. Click the `Themes` button to the right of the search box
 4. Enter `dracula-syntax` in the search box
 
+#### Install using Atom Package Manager
+
+    apm install dracula-syntax
+
 #### Install using Git
 
 Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `~/.atom/packages` directory.
