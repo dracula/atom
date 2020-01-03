@@ -2,10 +2,10 @@
 
 #### Install using Atom
 
-1.  Go to `Atom -> Preferences...`
-2.  Then select the `Install` tab
-3.  Click the `Themes` button to the right of the search box
-4.  Enter `dracula-theme` in the search box
+1. Go to `Atom -> Preferences...`
+2. Then select the `Install` tab
+3. Click the `Themes` button to the right of the search box
+4. Enter `dracula-theme` in the search box
 
 #### Install using Git
 
@@ -15,8 +15,8 @@ Alternatively, if you are a git user, you can install the theme and keep up to d
 
 #### Install manually
 
-1.  Download using the [GitHub .zip download](https://github.com/dracula/atom/archive/master.zip) option and unzip them
-2.  Move the `dracula-theme` folder to `~/.atom/packages`
+1. Download using the [GitHub .zip download](https://github.com/dracula/atom/archive/master.zip) option and unzip them
+2. Move the `dracula-theme` folder to `~/.atom/packages`
 
 #### Activating theme
 
