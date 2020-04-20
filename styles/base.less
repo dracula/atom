@@ -137,6 +137,10 @@ atom-text-editor {
     color: @orange;
     font-style: italic;
   }
+
+  &.syntax--list {
+    color: @cyan;
+  }
 }
 
 .syntax--invalid.syntax--illegal {
@@ -219,6 +223,12 @@ atom-text-editor {
     &.syntax--any-method {
       color: @cyan;
     }
+  }
+
+  // MarkupBlockquote
+  &.syntax--quote&.syntax--gfm {
+    color: @yellow;
+    font-style: italic;
   }
 }
 
@@ -310,7 +320,7 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @yellow;
     font-style: italic;
   }
 
@@ -335,13 +345,61 @@ atom-text-editor {
   }
 }
 
-.syntax--source.syntax--gfm .syntax--markup {
-  -webkit-font-smoothing: auto;
-  &.syntax--heading {
+// Markdown/RST
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    -webkit-font-smoothing: auto;
+
+    &.syntax--heading {
+      color: @purple;
+      font-weight: bold;
+    }
+
+    &.syntax--link {
+      &.syntax--underline {
+        color: @cyan;
+      }
+    }
+
+    &.syntax--raw {
+      color: @green;
+    }
+  }
+
+  .syntax--link {
+    .syntax--punctuation {
+      color: @orange;
+    }
+  }
+
+  .syntax--raw.syntax--inline {
     color: @green;
   }
-}
 
+  &.syntax--quote,
+  .syntax--comment.syntax--quote {
+    color: @yellow;
+    font-style: italic;
+  }
+
+  // MarkupCodeBlockWithoutSyntax
+  .syntax--raw {
+    .syntax--support.syntax--gfm {
+      color: @orange;
+    }
+  }
+
+  // MarkupCodeBlockWithSyntax
+  .syntax--code {
+    .syntax--support.syntax--gfm {
+      color: @green;
+    }
+
+    .syntax--embedded {
+      color: @green;
+    }
+  }
+}
 
 // Mini editor
 
