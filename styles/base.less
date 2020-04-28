@@ -148,6 +148,15 @@ atom-text-editor {
   color: @syntax-background-color;
 }
 
+// REGEX
+.syntax--regexp {
+  .syntax--keyword.syntax--operator,
+  .syntax--storage.syntax--modifier {
+    color: @red;
+  }
+}
+
+// STRING
 .syntax--string {
   color: @yellow;
 
