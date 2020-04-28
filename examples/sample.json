@@ -1,0 +1,29 @@
+{
+  "singleValues": {
+    "number": 0,
+    "string": "test",
+    "boolean": true,
+  },
+  "multipleValues": {
+    "array": [1 ,2 ,3, 4, 5],
+    "stringArray": ["string", "string", "string"],
+    "booleanArray": [true, false, true, true, false],
+    "objectArray": [
+      {
+        "number": 0,
+        "string": "test",
+        "boolean": true,
+      },
+      {
+        "number": 0,
+        "string": "test",
+        "boolean": true,
+      },
+      {
+        "number": 0,
+        "string": "test",
+        "boolean": true,
+      }
+    ]
+  }
+}
