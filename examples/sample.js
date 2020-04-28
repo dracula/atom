@@ -1,3 +1,5 @@
+import json from 'sample.json';
+
 /*
  * Once upon a time...
  */
