@@ -1,5 +1,3 @@
-import json from 'sample.json';
-
 /*
  * Once upon a time...
  */
@@ -18,10 +16,6 @@ class Vampire {
 
   calcAge() {
     return this.deathDate - this.birthDate;
-  }
-
-  regexAge() {
-    const regex = /ab+c/;
   }
 }
 
