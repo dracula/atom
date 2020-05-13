@@ -1,7 +1,7 @@
 {
   "name": "dracula-syntax",
   "theme": "syntax",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "description": "A dark syntax theme for Atom",
   "repository": "https://github.com/dracula/atom",
   "license": "MIT",
