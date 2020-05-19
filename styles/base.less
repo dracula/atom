@@ -150,6 +150,11 @@ atom-text-editor {
   &.syntax--list {
     color: @cyan;
   }
+
+  &.syntax--instance {
+    color: @purple;
+    font-style: italic;
+  }
 }
 
 .syntax--invalid.syntax--illegal {
@@ -183,6 +188,12 @@ atom-text-editor {
 }
 
 .syntax--punctuation {
+  color: @pink;
+
+  &.syntax--bracket {
+    color: @foreground;
+  }
+
   &.syntax--definition {
     &.syntax--bracket,
     &.syntax--curly {
