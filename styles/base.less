@@ -128,6 +128,10 @@ atom-text-editor {
 
   &.syntax--other.syntax--symbol {
     color: @green;
+
+    &.syntax--hashkey {
+      color: @purple;
+    }
   }
 }
 
@@ -213,6 +217,12 @@ atom-text-editor {
     &.syntax--italic {
       color: @purple;
       font-style: italic;
+    }
+  }
+
+  &.syntax--separator {
+    &.syntax--inheritance {
+      color: @pink;
     }
   }
 
@@ -319,7 +329,6 @@ atom-text-editor {
   }
 
   &.syntax--separator {
-    // background-color: @gray;
     color: @pink;
   }
 }
