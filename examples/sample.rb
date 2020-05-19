@@ -14,6 +14,8 @@ module ActiveRecord
   #     puts invalid.record.errors
   #   end
   class RecordInvalid < ActiveRecordError
+    include ConstantVariable
+
     attr_reader :record
 
     def initialize(record = nil)
