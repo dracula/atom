@@ -90,6 +90,11 @@ atom-text-editor {
 
   &.syntax--other.syntax--special-method {
     color: @blue;
+
+    .syntax--ruby &,
+    &.syntax--ruby {
+      color: @pink;
+    }
   }
 
   &.syntax--other.syntax--unit {
@@ -122,7 +127,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @purple;
   }
 }
 
@@ -140,6 +145,15 @@ atom-text-editor {
 
   &.syntax--list {
     color: @cyan;
+  }
+
+  &.syntax--constant {
+    color: @purple;
+  }
+
+  &.syntax--instance {
+    color: @purple;
+    font-style: italic;
   }
 }
 
@@ -174,6 +188,12 @@ atom-text-editor {
 }
 
 .syntax--punctuation {
+  color: @pink;
+
+  &.syntax--bracket {
+    color: @foreground;
+  }
+
   &.syntax--definition {
     &.syntax--bracket,
     &.syntax--curly {
@@ -189,6 +209,10 @@ atom-text-editor {
     &.syntax--parameters,
     &.syntax--array {
       color: @syntax-text-color;
+
+      .syntax--ruby & {
+        color: @yellow;
+      }
     }
 
     &.syntax--heading,
@@ -207,8 +231,14 @@ atom-text-editor {
     }
   }
 
+  &.syntax--separator {
+    &.syntax--inheritance {
+      color: @pink;
+    }
+  }
+
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: @pink;
   }
 
 }
@@ -231,6 +261,11 @@ atom-text-editor {
 
     &.syntax--any-method {
       color: @cyan;
+    }
+
+    .syntax--ruby & {
+      color: @pink;
+      font-style: normal;
     }
   }
 
@@ -305,7 +340,6 @@ atom-text-editor {
   }
 
   &.syntax--separator {
-    // background-color: @gray;
     color: @pink;
   }
 }

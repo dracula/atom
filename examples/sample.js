@@ -1,3 +1,5 @@
+import sampleJson from './sample.json';
+
 /*
  * Once upon a time...
  */
@@ -26,4 +28,6 @@ const Dracula = new Vampire({
   birthDate: 1428,
   deathDate: 1476,
   weaknesses: ['Sunlight', 'Garlic']
+  bool: [true, false],
+  embedded: `${true}`
 });
